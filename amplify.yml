@@ -1,0 +1,13 @@
+version: 0.1
+frontend:
+  phases:
+    build:
+      commands:
+        - hugo -t hugo-base-theme
+        - ls -l public/
+  artifacts:
+    baseDirectory: public/
+    files:
+      - '**/*'
+  cache:
+    paths: []
